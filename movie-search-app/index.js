@@ -1,11 +1,13 @@
 const express = require('express');
 const axios = require('axios');
+const cors = require('cors');
 const app = express();
 const port = 5002;
 const TMDB_API_KEY = 'cf53dea4dad32e943a22ae8387b2dbaa';
 const TMDB_BASE_URL = 'https://api.themoviedb.org/3';
 
 app.use(express.json());
+app.use(cors());
 
 app.get('/api/search/:title', async (req, res) => {
     try {
