@@ -9,7 +9,7 @@ app.use(express.json());
 
 app.get('/api/search/:title', async (req, res) => {
     try {
-        const response = await axios.get(`${TMDB_BASE_URL}/search/movie', {
+        const response = await axios.get('${TMDB_BASE_URL}/search/movie', {
             params: {
                 api_key: TMDB_API_KEY,
                 query: req.params.title
