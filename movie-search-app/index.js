@@ -1,7 +1,7 @@
 const express = require('express');
 const axios = require('axios');
 const app = express();
-const port = 5000;
+const port = 5002;
 const TMDB_API_KEY = 'cf53dea4dad32e943a22ae8387b2dbaa';
 const TMDB_BASE_URL = 'https://api.themoviedb.org/3';
 
