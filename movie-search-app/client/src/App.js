@@ -12,7 +12,7 @@ const App = () => {
 
   const handleSearch = async (query) => {
     try {
-      const response = await axios.get('/api/search/${query}');
+      const response = await axios.get('http://localhost:5002/api/search/${query}');
       setMovies(response.data.results);
     } catch (error) {
       console.error('Error searching for movies:', error);
