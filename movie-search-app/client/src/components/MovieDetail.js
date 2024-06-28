@@ -16,7 +16,7 @@ const MovieDetail = ({ movieId }) => {
         fetchMovie();
     }, [movieId]);
 
-    if (!movie) return <div>Loading.....</div>
+    if (!movie) return <div>Loading...</div>
 
     const trailer = movie.videos.results.find(video => video.type === 'Trailer');
 
